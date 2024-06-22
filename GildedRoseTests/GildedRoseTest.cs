@@ -7,11 +7,11 @@ namespace GildedRoseTests;
 public class GildedRoseTest
 {
     [Fact]
-    public void foo()
+    public void Foo()
     {
-        IList<Item> Items = new List<Item> { new Item { Name = "Conjured Mana Cake", SellIn = 4, Quality = 9 } };
+        IList<Item> Items = new List<Item> { new Item { Name = "Conjured Mana Cake", SellIn = 4, Quality = 20 } };
         GildedRose app = new GildedRose(Items);
         app.UpdateQuality();
-        Assert.Equal("fixme", Items[0].Name);
+        Assert.Equal("Conjured Mana Cake", Items[0].Name);
     }
 }

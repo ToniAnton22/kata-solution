@@ -19,12 +19,13 @@ public class GildedRose
             {
                 if (Items[i].Quality > 0)
                 {
-                    if (Items[i].Name != "Sulfuras, Hand of Ragnaros" && Items[i].Name != "Conjured Mana Cake")
+                    if (Items[i].Name != "Sulfuras, Hand of Ragnaros" && !Items[i].Name.Contains("Conjured"))
                     {
                         Items[i].Quality = Items[i].Quality - 1;
                     }
-                    // Conjured items
-                    if (Items[i].Name == "Conjured Mana Cake")
+                    // Conjured items check, expires twice as much as normal items
+                    
+                    if (Items[i].Name.Contains("Conjured"))
                     {
                         Items[i].Quality = Items[i].Quality - 2;   
                     }
@@ -72,12 +73,12 @@ public class GildedRose
                     {
                         if (Items[i].Quality > 0)
                         {
-                            if (Items[i].Name != "Sulfuras, Hand of Ragnaros" && Items[i].Name != "Conjured Mana Cake")
+                            if (Items[i].Name != "Sulfuras, Hand of Ragnaros" && !Items[i].Name.Contains("Conjured"))
                             {
                                 Items[i].Quality = Items[i].Quality - 1;
                             }
-
-                            if (Items[i].Name == "Conjured Mana Cake")
+                            // Checks to see if the conjured item is passed date, if it is, quality will reduced twice as much
+                            if (Items[i].Name.Contains("Conjured"))
                             {
                                 Items[i].Quality = Items[i].Quality - 2;
                             }   
