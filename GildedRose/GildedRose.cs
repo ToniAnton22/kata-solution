@@ -27,7 +27,7 @@ public class GildedRose
                     
                     if (Items[i].Name.Contains("Conjured"))
                     {
-                        Items[i].Quality = Items[i].Quality - 2;   
+                        Items[i].Quality = Items[i].Quality - 1;   
                     }
                 }
 
@@ -80,7 +80,7 @@ public class GildedRose
                             // Checks to see if the conjured item is passed date, if it is, quality will reduced twice as much
                             if (Items[i].Name.Contains("Conjured"))
                             {
-                                Items[i].Quality = Items[i].Quality - 2;
+                                Items[i].Quality = Items[i].Quality - 1;
                             }   
                         }
                     }
