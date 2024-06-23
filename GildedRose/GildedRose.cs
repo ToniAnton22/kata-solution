@@ -97,9 +97,18 @@ public class GildedRose
                     }
                 }
             }
+
+            if (Items[i].Name.Contains("Sulfuras") && (Items[i].Quality < 80 || Items[i].Quality > 80))
+            {
+                Items[i].Quality = 80;
+            }
             if (Items[i].Quality < 0)
             {
                 Items[i].Quality = 0;
+            }
+            if (Items[i].Quality > 50 && !Items[i].Name.Contains("Sulfuras"))
+            {
+                Items[i].Quality = 50;
             }
         }
     }
