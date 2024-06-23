@@ -23,7 +23,7 @@ public class GildedRose
                     {
                         Items[i].Quality = Items[i].Quality - 1;
                     }
-                    // Conjured items check, expires twice as much as normal items
+                    
                     
                     if (Items[i].Name.Contains("Conjured"))
                     {
@@ -77,7 +77,7 @@ public class GildedRose
                             {
                                 Items[i].Quality = Items[i].Quality - 1;
                             }
-                            // Checks to see if the conjured item is passed date, if it is, quality will reduced twice as much
+                            
                             if (Items[i].Name.Contains("Conjured"))
                             {
                                 Items[i].Quality = Items[i].Quality - 1;

@@ -34,7 +34,7 @@ public class Program
                 SellIn = 5,
                 Quality = 49
             },
-            // Fixed Conjured Item
+           
             new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
         };
 
