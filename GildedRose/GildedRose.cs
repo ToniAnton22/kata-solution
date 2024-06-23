@@ -97,6 +97,10 @@ public class GildedRose
                     }
                 }
             }
+            if (Items[i].Quality < 0)
+            {
+                Items[i].Quality = 0;
+            }
         }
     }
 }
